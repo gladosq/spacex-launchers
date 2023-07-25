@@ -1,0 +1,57 @@
+
+.item {
+  background: $card-gradient-color;
+  box-shadow: $card-box-shadow;
+  border: $card-border;
+  border-radius: 5px;
+  padding: 20px;
+
+  transition: 0.25s ease-in-out;
+  transition-property: box-shadow, transform;
+
+  &:hover {
+    box-shadow: 0 4px 24px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+  }
+}
+
+.itemLink {
+  display: flex;
+  position: relative;
+  gap: 20px;
+}
+
+.dateWrapper {
+  position: absolute;
+  right: -6px;
+  bottom: -6px;
+  color: rgba(255, 255, 255, 0.60);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.imageWrapper {
+  width: 100px;
+  height: 100px;
+
+  .image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+}
+
+.innerWrapper {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    margin-bottom: 14px;
+  }
+}
+
+.successCaption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

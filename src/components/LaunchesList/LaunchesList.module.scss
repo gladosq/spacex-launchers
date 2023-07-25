@@ -1,0 +1,15 @@
+.wrapper {
+  margin-bottom: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+

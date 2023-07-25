@@ -1,0 +1,72 @@
+.sortingWrapper {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.popoversContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  margin-bottom: 28px;
+}
+
+.popoverWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+
+  .popoverButton {
+    font-family: var(--montserrat-font);
+    color: $basic-font-color;
+    background: transparent;
+    border: 0;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 6px 8px;
+    cursor: pointer;
+    text-align: left;
+    transition: 1.3s ease-in-out;
+  }
+
+  .popoverButtonInactive {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+}
+
+.changeInnerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 4px;
+    transition: 0.3s ease-in-out;
+    user-select: none;
+
+    svg {
+      margin-bottom: -2px;
+    }
+  }
+
+  .subtitle {
+    font-size: 14px;
+    opacity: 0.4;
+    user-select: none;
+  }
+
+  &:hover {
+
+    .title {
+      opacity: 0.4;
+    }
+  }
+}

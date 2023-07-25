@@ -1,0 +1,78 @@
+{
+  "name": "spacex",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "rules": {
+      "no-console": "off"
+    },
+    "extends": [
+      "react-app"
+    ],
+    "parserOptions": {
+      "project": [
+        "tsconfig.json"
+      ]
+    },
+    "overrides": [
+      {
+        "files": [
+          "*test*"
+        ],
+        "rules": {
+          "@typescript-eslint/unbound-method": "off",
+          "jest/unbound-method": "error"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.32.0",
+    "antd": "^5.7.3",
+    "clsx": "^2.0.0",
+    "dayjs": "^1.11.9",
+    "file-loader": "^6.2.0",
+    "nanoid": "^4.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.2",
+    "sass": "^1.64.1",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
+    "url-loader": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.4",
+    "@types/react": "^18.2.16",
+    "@types/react-dom": "^18.2.7",
+    "css-loader": "^6.8.1",
+    "css-modules-typescript-loader": "^4.0.1",
+    "html-webpack-plugin": "^5.5.3",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
