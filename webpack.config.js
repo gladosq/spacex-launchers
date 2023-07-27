@@ -5,8 +5,8 @@ const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 module.exports = {
   entry: "./src/index.tsx",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'index_bundle.js',
+    path: path.resolve(__dirname, '/dist'),
+    filename: 'bundle.js',
     publicPath: '/'
   },
   plugins: [
@@ -62,7 +62,11 @@ module.exports = {
             }
           }
         ]
-      }
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource'
+      },
     ]
   }
 };

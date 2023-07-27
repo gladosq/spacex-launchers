@@ -1,8 +1,8 @@
 import React from 'react';
 import {Route, Routes, useLocation} from 'react-router-dom';
 import Launches from './pages/launches/launches';
-import '/src/styles/global.scss';
-import '/src/styles/font-family.scss';
+import '../src/styles/global.scss';
+import '../src/styles/font-family.scss';
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 import LaunchDetails from './pages/launches/launch-details/launch-details';
 import ScrollToTop from './utils/scroll-to-top';
