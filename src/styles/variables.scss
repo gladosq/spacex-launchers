@@ -1,5 +1,11 @@
+/*--- Variables ---*/
 $background-color: #1b1b1b;
 $basic-font-color: #d0d0d0;
 $card-gradient-color: linear-gradient(to right, rgba(167, 169, 172, 0.10) 0%, rgba(23, 82, 170, 0.10) 100%);
 $card-box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
 $card-border: 1px solid rgba(0, 0, 0, 0.49);
+$basic-green-color: #04763f;
+
+/*--- Breakpoints ---*/
+$tablet-width: 820px;
+$mobile-width: 500px;

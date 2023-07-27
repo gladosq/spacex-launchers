@@ -1,0 +1,109 @@
+.wrapper {
+  border-radius: 5px;
+  border: $card-border;
+  background: $card-gradient-color;
+  box-shadow: $card-box-shadow;
+  padding: 36px;
+  margin: 0 20px 200px;
+
+  h1 {
+    color: $basic-font-color;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 0;
+
+    span {
+      color: $basic-green-color;
+    }
+
+    @media (max-width: $tablet-width) {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 20px;
+  }
+}
+
+.infoWrapper {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  .image {
+    width: 93px;
+    height: 93px;
+    object-fit: contain;
+
+
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.rocketInner {
+  margin-top: 60px;
+
+  h2 {
+    color: $basic-font-color;
+    font-size: 32px;
+    text-transform: uppercase;
+
+    span {
+      color: $basic-green-color;
+    }
+
+    @media (max-width: $tablet-width) {
+      font-size: 20px;
+    }
+  }
+}
+
+.numbers {
+  p {
+    margin-bottom: 14px;
+    margin-top: 4px;
+  }
+}
+
+.details {
+  @media (max-width: $tablet-width) {
+    font-size: 13px;
+  }
+}
+
+.rocketGallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 80px;
+
+  .rocketImage {
+    width: 240px;
+    height: 166px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.additionalInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.successCaption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+

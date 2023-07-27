@@ -1,5 +1,4 @@
 export default function Logo() {
-
   return (
     <svg width="332" height="41" viewBox="0 0 332 41" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_1_4)">

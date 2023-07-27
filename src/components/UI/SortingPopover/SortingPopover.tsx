@@ -2,8 +2,8 @@ import s from './SortingPopover.module.scss';
 import clsx from 'clsx';
 import {useState} from 'react';
 import {Popover} from 'antd';
-import {POPOVER_OVERLAY_STYLES} from '../../const/decoration';
-import ArrowIcon from '../UI/Icons/ArrowIcon';
+import {POPOVER_OVERLAY_STYLES} from '../../../const/decoration';
+import ArrowIcon from '../Icons/ArrowIcon';
 
 interface SortingPopoverProps {
   onChangeSort: (value: string) => void;
@@ -47,7 +47,7 @@ export default function SortingPopover({onChangeSort}: SortingPopoverProps) {
     <div className={s.sortingWrapper}>
       <Popover
         arrow={false}
-        placement='bottom'
+        placement='bottomRight'
         content={popoverContent}
         trigger='click'
         color={'rgb(22,30,49)'}
