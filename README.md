@@ -1,6 +1,6 @@
 ## SpaceX Launchers
 
-### Деплой -
+### Деплой - https://spacex-launces-promo.netlify.app/
 
 #### Необходимые компоненты для запуска:
 - [x] [Node.js](https://nodejs.org/)
