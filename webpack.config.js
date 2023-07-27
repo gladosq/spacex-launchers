@@ -5,7 +5,7 @@ const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 module.exports = {
   entry: "./src/index.tsx",
   output: {
-    path: path.resolve(__dirname, '/dist'),
+    path: path.resolve(__dirname, "/dist"),
     filename: 'bundle.js',
     publicPath: '/'
   },
@@ -16,7 +16,7 @@ module.exports = {
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, "build")
+      directory: path.join(__dirname, "dist")
     },
     port: 3000,
     historyApiFallback: true,
@@ -44,7 +44,7 @@ module.exports = {
         use: [
           "style-loader",
           {loader: "css-loader", options: { modules: true }},
-          {loader: 'resolve-url-loader'},
+          {loader: "resolve-url-loader"},
           {
             loader: "sass-loader?sourceMap",
             options: {
@@ -64,11 +64,11 @@ module.exports = {
             }
           }
         ]
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource'
-      },
+      }
+      // {
+      //   test: /\.(woff|woff2|eot|ttf|otf)$/i,
+      //   type: 'asset/resource'
+      // },
     ]
   }
 };

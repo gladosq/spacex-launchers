@@ -2,9 +2,11 @@
   "name": "spacex",
   "version": "1.0.0",
   "private": true,
+  "homepage": ".",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack serve --mode development"
+    "start": "webpack serve --mode development",
+    "serve": "serve -s /dist"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
