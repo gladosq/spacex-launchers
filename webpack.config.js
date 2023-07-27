@@ -44,10 +44,12 @@ module.exports = {
         use: [
           "style-loader",
           {loader: "css-loader", options: { modules: true }},
+          {loader: 'resolve-url-loader'},
           {
-            loader: "sass-loader",
+            loader: "sass-loader?sourceMap",
             options: {
               additionalData: `@import "./src/styles/variables.scss";`,
+              sourceMap: true
             },
           }
         ],
